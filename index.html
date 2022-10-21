@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script defer="defer" src="/test.js"></script>
+        <link href="/test.css" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://kit.fontawesome.com/944eb371a4.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Rubik&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Grotesk:regular,500" media="all">
+        <script type="text/javascript">
+          WebFont.load({  google: {    families: ["Space Grotesk:regular,500"]  }});
+        </script>
+    </head>
+    <body>
+      <nav data-toggled="false" data-transitionable="false">
+        <div id="nav-logo-section" class="nav-section">
+          <a href="#">
+            <i class="fa-solid fa-bars"></i>
+          </a>
+        </div>
+        <div id="nav-mobile-section">
+          <div id="nav-link-section" class="nav-section">
+            <a href="#">idk</a>
+            <a href="#">stuff</a>
+          </div>
+          <div id="nav-social-section" class="nav-section">
+            <!--<a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/c/Hyperplexed" target="_blank">
+              <button class="rounded-full focus:outline-none focus:ring focus:ring-violet-300">
+                <i class="fa-brands fa-youtube"></i>
+              </button>
+            </a>    
+            <a href="#">
+              <i class="fa-brands fa-codepen"></i>
+            </a>-->
+          </div>
+          <div id="nav-contact-section" class="nav-section">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">DO NOT CLICK</a>
+          </div>
+        </div>
+        <button id="nav-toggle-button" type="button" onclick="handleNavToggle()">
+          <span>Menu</span>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+      
+      <main>
+        <article data-index="0" data-status="active">
+          <div class="article-image-section article-section"></div>
+          <div class="article-description-section article-section">
+            <p>
+              This is a recreation (from scratch) of <a class="source-link" href="https://www.dylanbrouwer.design/work" target="_blank">dylanbrouwer.design/work</a>. 
+            </p>
+          </div>
+          <div class="article-title-section article-section">
+            <h2 class="transition duration-100 hover:text-indigo-600">Qué te gusta hacer?</h2>
+            <i class="fa-light fa-plus-large"></i>
+          </div>
+          <div class="article-nav-section article-section">
+            <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+              <i class="fa-light fa-thin fa-arrow-left-long"></i>
+            </button>
+            <button class="article-nav-button" type="button" onclick="handleRightClick()">
+              <i class="fa-light fa-thin fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </article>
+        <article data-index="1" data-status="inactive">    
+          <div class="article-image-section article-section"></div>
+          <div class="article-description-section article-section">
+            <h2 style="font-family: 'Space Grotesk'; font-size: 2rem;">Español</h2>
+            <p>Me gusta usar la computadora.</p>
+            <h2 style="font-family: 'Space Grotesk'; font-size: 2rem;">Inglés</h2>
+            <p>I like to use the computer.</p>
+          </div>
+          
+          <div class="article-title-section article-section">
+            <h2 class="transition duration-100 hover:text-indigo-600">Qué te gusta hacer?</h2>
+            <i class="fa-light fa-plus-large"></i>
+          </div>
+          <div class="article-nav-section article-section">
+            <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+              <i class="fa-light fa-arrow-left-long"></i>
+            </button>
+            <button class="article-nav-button" type="button" onclick="handleRightClick()">
+              <i class="fa-light fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </article>
+        <article data-index="2" data-status="inactive">    
+          <div class="article-image-section article-section"></div>
+          <div class="article-description-section article-section">
+            <h2 style="font-family: 'Space Grotesk'; font-size: 2rem;">Español</h2>
+            <p>Me gusta ver la tele.</p>
+            <h2 style="font-family: 'Space Grotesk'; font-size: 2rem;">Inglés</h2>
+            <p>I like to watch television.</p>
+          </div>
+          <div class="article-title-section article-section">
+            <h2>Qué te gusta hacer?</h2>
+            <i class="fa-light fa-plus-large"></i>
+          </div>
+          <div class="article-nav-section article-section">
+            <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+              <i class="fa-light fa-arrow-left-long"></i>
+            </button>
+            <button class="article-nav-button" type="button" onclick="handleRightClick()">
+              <i class="fa-light fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </article>
+        <article data-index="3" data-status="inactive">    
+          <div class="article-image-section article-section"></div>
+          <div class="article-description-section article-section">
+            <h2 style="font-family: 'Space Grotesk'; font-size: 2rem;">Español</h2>
+            <p>Me gusta dormir.</p>
+            <h2 style="font-family: 'Space Grotesk'; font-size: 2rem;">Inglés</h2>
+            <p>I like to sleep.</p>
+          </div>
+          <div class="article-title-section article-section">
+            <h2>Qué te gusta hacer?</h2>
+            <i class="fa-light fa-plus-large"></i>
+          </div>
+          <div class="article-nav-section article-section">
+            <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+              <i class="fa-light fa-arrow-left-long"></i>
+            </button>
+            <button class="article-nav-button" type="button" onclick="handleRightClick()">
+              <i class="fa-light fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </article>
+        <article data-index="4" data-status="inactive">    
+          <div class="article-image-section article-section"></div>
+          <div class="article-description-section article-section">
+            <h2 style="font-family: 'Space Grotesk'; font-size: 2rem;">Español</h2>
+            <p>Me gusta escuchar música.</p>
+            <h2 style="font-family: 'Space Grotesk'; font-size: 2rem;">Inglés</h2>
+            <p>I like to listen to music.</p>
+          </div>
+          <div class="article-title-section article-section">
+            <h2>Qué te gusta hacer?</h2>
+            <i class="fa-light fa-plus-large"></i>
+          </div>
+          <div class="article-nav-section article-section">
+            <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+              <i class="fa-light fa-arrow-left-long"></i>
+            </button>
+            <button class="article-nav-button" type="button" onclick="handleRightClick()">
+              <i class="fa-light fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </article>
+        <article data-index="5" data-status="inactive">    
+          <div class="article-image-section article-section"></div>
+          <div class="article-description-section article-section">
+            <h2 style="font-family: 'Space Grotesk'; font-size: 2rem;">Español</h2>
+            <p>Me gusta ver la tele.</p>
+            <h2 style="font-family: 'Space Grotesk'; font-size: 2rem;">Inglés</h2>
+            <p>I like to watch television.</p>
+          </div>
+          <div class="article-title-section article-section">
+            <h2>Qué te gusta hacer?</h2>
+            <i class="fa-light fa-plus-large"></i>
+          </div>
+          <div class="article-nav-section article-section">
+            <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+              <i class="fa-light fa-arrow-left-long"></i>
+            </button>
+            <button class="article-nav-button" type="button" onclick="handleRightClick()">
+              <i class="fa-light fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </article>
+        <article data-index="6" data-status="inactive">    
+          <div class="article-image-section article-section"></div>
+          <div class="article-description-section article-section">
+            <h2 style="font-family: 'Space Grotesk'; font-size: 2rem;">Español</h2>
+            <p>Me gusta ver la tele.</p>
+            <h2 style="font-family: 'Space Grotesk'; font-size: 2rem;">Inglés</h2>
+            <p>I like to watch television.</p>
+          </div>
+          <div class="article-title-section article-section">
+            <h2>Qué te gusta hacer?</h2>
+            <i class="fa-light fa-plus-large"></i>
+          </div>
+          <div class="article-nav-section article-section">
+            <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+              <i class="fa-light fa-arrow-left-long"></i>
+            </button>
+            <button class="article-nav-button" type="button" onclick="handleRightClick()">
+              <i class="fa-light fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </article>
+      </main>
+    </body>
